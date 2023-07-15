@@ -1,0 +1,6 @@
+<Project>
+    <PropertyGroup>
+        <BaseIntermediateOutputPath>./gen/obj</BaseIntermediateOutputPath>
+        <BaseOutputPath>./gen/bin</BaseOutputPath>
+    </PropertyGroup>
+</Project>
