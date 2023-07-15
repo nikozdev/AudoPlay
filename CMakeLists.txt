@@ -1,5 +1,0 @@
-cmake_minimum_required(VERSION 3.20)
-project(aSoundAgent VERSION 0.0.0)
-add_subdirectory(lib/portaudio)
-add_executable(aSoundAgent src/main.cxx)
-target_link_libraries(PortAudio)
