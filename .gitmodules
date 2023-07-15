@@ -1,3 +1,6 @@
 [submodule "lib/portaudio"]
 	path = lib/portaudio
 	url = git@github.com:PortAudio/portaudio.git
+[submodule "lib/lTermArgs"]
+	path = lib/lTermArgs
+	url = git@github.com:nikozdev/lTermArgs.git

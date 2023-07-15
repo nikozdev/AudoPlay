@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 # proj
 project(aSoundAgent
-    VERSION 0.1.0
+    VERSION 0.2.0
     DESCRIPTION "audio dsp application"
     ) # project
 set(vProjName ${PROJECT_NAME})
@@ -19,7 +19,11 @@ set(vFileDirLib ${vFileDirLoc}/lib)
 add_subdirectory(
     ${vFileDirLib}/portaudio
     ${vFileDirGen}/CMakeFiles/portaudio.dir
-    ) # add_subdirectory
+    ) # add_subdirectory portaudio
+add_subdirectory(
+    ${vFileDirLib}/lTermArgs/env
+    ${vFileDirGen}/CMakeFiles/lTermArgs.dir
+    ) # add_subdirectory lTermArgs
 # make
 add_executable(${vProjName}
     ${vFileDirSrc}/main.cxx
@@ -29,4 +33,5 @@ target_compile_options(${vProjName} PRIVATE
     ) # target_compile_options
 target_link_libraries(${vProjName}
     PortAudio
+    lTermArgs
     ) # target_link_libraries
