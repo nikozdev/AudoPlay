@@ -99,11 +99,11 @@ int fPrintADevInfo(const ::PaDeviceInfo *pADevInfo);
 int fPrintADevInfo(int vADevIndex);
 int main(int argc, char **argv)
 {
-	::args::ArgParser vTermArgs{
-		R"(aSoundAgent - a command line digital audio signal processor)",
-		"1.1.0"
-	}; // vTermArgs
-	vTermArgs.parse(argc, argv);
+	::nTermArgs::tCmd vTermArgs;
+	vTermArgs.fSetHelpText(
+		R"(aSoundAgent - a command line digital audio signal processor)"
+	);
+	vTermArgs.fParse(argc, argv);
 	// datadef
 	tECode		 vECode		  = cECodeNone;
 	tWaveSawData vWaveSawData = {
