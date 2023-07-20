@@ -1,2 +1,6 @@
 *.DS_Store
 gen/
+# binary
+*.mp3
+*.wav
+*.ogg
